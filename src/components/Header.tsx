@@ -12,7 +12,7 @@ const Header = () => {
           {/* Logo */}
           <div className="flex items-center gap-2">
             <Mountain className="w-8 h-8 text-accent" />
-            <span className="text-2xl font-bold text-foreground">Reva Farms</span>
+            <span className="text-2xl font-bold text-foreground">Jordan Retreats</span>
           </div>
 
           {/* Desktop Navigation */}
@@ -21,7 +21,7 @@ const Header = () => {
               Home
             </a>
             <a href="#chalets" className="text-foreground hover:text-accent transition-colors font-medium">
-              Chalets
+              Properties
             </a>
             <a href="#about" className="text-foreground hover:text-accent transition-colors font-medium">
               About
@@ -60,7 +60,7 @@ const Header = () => {
                 Home
               </a>
               <a href="#chalets" className="text-foreground hover:text-accent transition-colors font-medium py-2">
-                Chalets
+                Properties
               </a>
               <a href="#about" className="text-foreground hover:text-accent transition-colors font-medium py-2">
                 About

@@ -12,36 +12,36 @@ const FeaturedChalets = () => {
   const chalets = [
     {
       id: "1",
-      name: "Cozy Alpine Retreat",
-      location: "Whistler, BC",
-      price: 299,
+      name: "Amman Hills Villa",
+      location: "Amman, Jordan",
+      price: 250,
       rating: 4.9,
       reviews: 127,
       guests: 6,
       image: chalet1,
-      amenities: ["WiFi", "Parking", "Breakfast", "Fireplace", "Hot Tub"],
+      amenities: ["WiFi", "Parking", "City Views", "Pool", "Traditional Design"],
     },
     {
       id: "2",
-      name: "Modern Lakeside Chalet",
-      location: "Banff, AB",
-      price: 459,
+      name: "Dead Sea Luxury Retreat",
+      location: "Dead Sea, Jordan",
+      price: 420,
       rating: 4.8,
       reviews: 89,
       guests: 8,
       image: chalet2,
-      amenities: ["WiFi", "Parking", "Lake Access", "Sauna", "Balcony"],
+      amenities: ["WiFi", "Parking", "Sea View", "Infinity Pool", "Spa Access"],
     },
     {
       id: "3",
-      name: "Traditional Mountain Lodge",
-      location: "Jasper, AB",
-      price: 349,
+      name: "Wadi Rum Desert Lodge",
+      location: "Wadi Rum, Jordan",
+      price: 180,
       rating: 4.7,
       reviews: 156,
       guests: 4,
       image: chalet3,
-      amenities: ["WiFi", "Parking", "Garden", "Hiking Trails", "Mountain View"],
+      amenities: ["WiFi", "Desert Views", "Stargazing", "Bedouin Experience", "Traditional Meals"],
     },
   ];
 
@@ -62,11 +62,11 @@ const FeaturedChalets = () => {
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
-            Featured <span className="text-accent">Chalets</span>
+            Featured <span className="text-accent">Properties</span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-            Discover our hand-picked selection of premium chalets, each offering unique charm 
-            and breathtaking views in Canada's most beautiful mountain destinations.
+            Discover our hand-picked selection of luxury villas across Jordan, from historic Amman
+            to the magical Wadi Rum desert and the healing waters of the Dead Sea.
           </p>
         </div>
 

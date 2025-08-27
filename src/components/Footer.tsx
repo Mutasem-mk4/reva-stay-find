@@ -10,11 +10,11 @@ const Footer = () => {
           <div className="space-y-4">
             <div className="flex items-center gap-2">
               <Mountain className="w-8 h-8 text-luxury" />
-              <span className="text-2xl font-bold">Reva Farms</span>
+              <span className="text-2xl font-bold">Jordan Retreats</span>
             </div>
             <p className="text-primary-foreground/80 leading-relaxed">
-              Your trusted partner for discovering the perfect mountain retreat. 
-              Experience luxury, comfort, and nature's beauty.
+              Your gateway to luxury Jordanian villas and authentic Middle Eastern experiences.
+              Discover Jordan's hidden gems from ancient cities to mystical deserts.
             </p>
           </div>
 
@@ -26,7 +26,7 @@ const Footer = () => {
                 Home
               </a>
               <a href="#chalets" className="text-primary-foreground/80 hover:text-luxury transition-colors">
-                Browse Chalets
+                Browse Properties
               </a>
               <a href="#about" className="text-primary-foreground/80 hover:text-luxury transition-colors">
                 About Us
@@ -42,7 +42,7 @@ const Footer = () => {
             <h3 className="text-lg font-semibold">Services</h3>
             <nav className="flex flex-col space-y-2">
               <a href="#" className="text-primary-foreground/80 hover:text-luxury transition-colors">
-                Chalet Rentals
+                Villa Rentals
               </a>
               <a href="#" className="text-primary-foreground/80 hover:text-luxury transition-colors">
                 Property Management
@@ -62,17 +62,17 @@ const Footer = () => {
             <div className="space-y-3">
               <div className="flex items-center gap-3">
                 <Phone className="w-5 h-5 text-luxury" />
-                <span className="text-primary-foreground/80">+1 (555) 123-4567</span>
+                <span className="text-primary-foreground/80">+962 6 123 4567</span>
               </div>
               <div className="flex items-center gap-3">
                 <Mail className="w-5 h-5 text-luxury" />
-                <span className="text-primary-foreground/80">info@revafarms.com</span>
+                <span className="text-primary-foreground/80">info@jordanretreats.com</span>
               </div>
               <div className="flex items-start gap-3">
                 <MapPin className="w-5 h-5 text-luxury mt-0.5" />
                 <span className="text-primary-foreground/80">
-                  123 Mountain View Drive<br />
-                  Whistler, BC V0N 1B0
+                  Rainbow Street 123<br />
+                  Amman, Jordan 11183
                 </span>
               </div>
             </div>
@@ -82,7 +82,7 @@ const Footer = () => {
         {/* Bottom Bar */}
         <div className="border-t border-primary-foreground/20 mt-12 pt-8 flex flex-col md:flex-row items-center justify-between gap-4">
           <p className="text-primary-foreground/60 text-sm">
-            © 2024 Reva Farms. All rights reserved.
+            © 2024 Jordan Retreats. All rights reserved.
           </p>
           <div className="flex items-center gap-6 text-sm">
             <a href="#" className="text-primary-foreground/60 hover:text-luxury transition-colors">

@@ -10,7 +10,7 @@ const HeroSection = () => {
       <div className="absolute inset-0">
         <img
           src={heroImage}
-          alt="Luxury mountain chalet surrounded by pristine nature"
+          alt="Luxury Jordanian villa with traditional architecture and desert views"
           className="w-full h-full object-cover"
         />
         <div className="absolute inset-0 bg-primary/40"></div>
@@ -20,11 +20,11 @@ const HeroSection = () => {
       <div className="relative z-10 text-center px-4 max-w-6xl mx-auto">
         <h1 className="text-5xl md:text-7xl font-bold text-white mb-6 leading-tight">
           Discover Your Perfect
-          <span className="block text-luxury drop-shadow-lg">Mountain Retreat</span>
+          <span className="block text-luxury drop-shadow-lg">Jordanian Retreat</span>
         </h1>
         
         <p className="text-xl md:text-2xl text-white/90 mb-12 max-w-3xl mx-auto leading-relaxed">
-          Escape to luxury chalets nestled in nature's embrace. Find your ideal getaway with Reva Farms.
+          Experience luxury villas across Jordan's stunning landscapes. From Amman's hills to Wadi Rum's desert.
         </p>
 
         {/* Search Box */}
