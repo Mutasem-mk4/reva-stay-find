@@ -1,43 +1,54 @@
 import { Button } from "@/components/ui/button";
-import { Mountain, Menu, X } from "lucide-react";
+import { Mountain, Menu, X, Languages } from "lucide-react";
 import { useState } from "react";
+import { useTranslation } from "@/contexts/TranslationContext";
+import { Link } from "react-router-dom";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const { language, toggleLanguage, t } = useTranslation();
 
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-sm border-b border-border">
       <div className="max-w-7xl mx-auto px-4">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
-          <div className="flex items-center gap-2">
+          <Link to="/" className="flex items-center gap-2">
             <Mountain className="w-8 h-8 text-accent" />
             <span className="text-2xl font-bold text-foreground">Jordan Retreats</span>
-          </div>
+          </Link>
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center gap-8">
-            <a href="#home" className="text-foreground hover:text-accent transition-colors font-medium">
-              Home
-            </a>
+            <Link to="/" className="text-foreground hover:text-accent transition-colors font-medium">
+              {t('nav.home')}
+            </Link>
             <a href="#chalets" className="text-foreground hover:text-accent transition-colors font-medium">
-              Properties
+              {t('nav.properties')}
             </a>
-            <a href="#about" className="text-foreground hover:text-accent transition-colors font-medium">
-              About
-            </a>
+            <Link to="/about" className="text-foreground hover:text-accent transition-colors font-medium">
+              {t('nav.about')}
+            </Link>
             <a href="#contact" className="text-foreground hover:text-accent transition-colors font-medium">
-              Contact
+              {t('nav.contact')}
             </a>
           </nav>
 
           {/* Desktop Actions */}
           <div className="hidden md:flex items-center gap-4">
+            <Button
+              variant="ghost"
+              size="icon"
+              onClick={toggleLanguage}
+              className="text-foreground hover:text-accent"
+            >
+              <Languages className="w-5 h-5" />
+            </Button>
             <Button variant="ghost" className="font-medium">
-              Sign In
+              {t('nav.signin')}
             </Button>
             <Button variant="default">
-              List Your Property
+              {t('nav.listproperty')}
             </Button>
           </div>
 
@@ -56,24 +67,32 @@ const Header = () => {
         {isMenuOpen && (
           <div className="md:hidden absolute top-16 left-0 right-0 bg-white border-b border-border shadow-card">
             <nav className="flex flex-col p-4 space-y-4">
-              <a href="#home" className="text-foreground hover:text-accent transition-colors font-medium py-2">
-                Home
-              </a>
+              <Link to="/" className="text-foreground hover:text-accent transition-colors font-medium py-2">
+                {t('nav.home')}
+              </Link>
               <a href="#chalets" className="text-foreground hover:text-accent transition-colors font-medium py-2">
-                Properties
+                {t('nav.properties')}
               </a>
-              <a href="#about" className="text-foreground hover:text-accent transition-colors font-medium py-2">
-                About
-              </a>
+              <Link to="/about" className="text-foreground hover:text-accent transition-colors font-medium py-2">
+                {t('nav.about')}
+              </Link>
               <a href="#contact" className="text-foreground hover:text-accent transition-colors font-medium py-2">
-                Contact
+                {t('nav.contact')}
               </a>
               <div className="pt-4 space-y-2">
+                <Button
+                  variant="ghost"
+                  onClick={toggleLanguage}
+                  className="w-full justify-start"
+                >
+                  <Languages className="w-4 h-4 mr-2" />
+                  {language === 'en' ? 'العربية' : 'English'}
+                </Button>
                 <Button variant="ghost" className="w-full justify-start">
-                  Sign In
+                  {t('nav.signin')}
                 </Button>
                 <Button variant="default" className="w-full">
-                  List Your Property
+                  {t('nav.listproperty')}
                 </Button>
               </div>
             </nav>

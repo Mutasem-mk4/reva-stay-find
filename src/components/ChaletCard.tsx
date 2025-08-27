@@ -51,7 +51,7 @@ const ChaletCard = ({
         />
         <div className="absolute top-4 right-4">
           <Badge variant="secondary" className="bg-white/90 text-foreground font-medium">
-            ${price}/night
+            {price} JD/night
           </Badge>
         </div>
       </div>
