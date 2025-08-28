@@ -21,16 +21,16 @@ const Header = () => {
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center gap-8">
             <Link to="/" className="text-foreground hover:text-accent transition-colors font-medium">
-              {t('nav.home')}
+              {t('home')}
             </Link>
             <a href="#chalets" className="text-foreground hover:text-accent transition-colors font-medium">
-              {t('nav.properties')}
+              {t('properties')}
             </a>
             <Link to="/about" className="text-foreground hover:text-accent transition-colors font-medium">
-              {t('nav.about')}
+              {t('about')}
             </Link>
             <a href="#contact" className="text-foreground hover:text-accent transition-colors font-medium">
-              {t('nav.contact')}
+              {t('contact')}
             </a>
           </nav>
 
