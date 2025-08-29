@@ -12,7 +12,7 @@ export default defineConfig({
   server: {
     port: 8080,
   },
-  base: process.env.NODE_ENV === 'production' ? '/your-repo-name/' : '/',
+  base: process.env.NODE_ENV === 'production' ? '/reva-stay-find/' : '/',
   build: {
     outDir: "dist",
     assetsDir: "assets",
