@@ -21,17 +21,17 @@ const Header = () => {
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center gap-8">
             <Link to="/" className="text-foreground hover:text-accent transition-colors font-medium">
-              {t('home')}
+              {t('nav.home')}
             </Link>
-            <a href="#chalets" className="text-foreground hover:text-accent transition-colors font-medium">
-              {t('properties')}
-            </a>
+            <Link to="/properties" className="text-foreground hover:text-accent transition-colors font-medium">
+              {t('nav.properties')}
+            </Link>
             <Link to="/about" className="text-foreground hover:text-accent transition-colors font-medium">
-              {t('about')}
+              {t('nav.about')}
             </Link>
-            <a href="#contact" className="text-foreground hover:text-accent transition-colors font-medium">
-              {t('contact')}
-            </a>
+            <Link to="/contact" className="text-foreground hover:text-accent transition-colors font-medium">
+              {t('nav.contact')}
+            </Link>
           </nav>
 
           {/* Desktop Actions */}
@@ -70,15 +70,15 @@ const Header = () => {
               <Link to="/" className="text-foreground hover:text-accent transition-colors font-medium py-2">
                 {t('nav.home')}
               </Link>
-              <a href="#chalets" className="text-foreground hover:text-accent transition-colors font-medium py-2">
+              <Link to="/properties" className="text-foreground hover:text-accent transition-colors font-medium py-2">
                 {t('nav.properties')}
-              </a>
+              </Link>
               <Link to="/about" className="text-foreground hover:text-accent transition-colors font-medium py-2">
                 {t('nav.about')}
               </Link>
-              <a href="#contact" className="text-foreground hover:text-accent transition-colors font-medium py-2">
+              <Link to="/contact" className="text-foreground hover:text-accent transition-colors font-medium py-2">
                 {t('nav.contact')}
-              </a>
+              </Link>
               <div className="pt-4 space-y-2">
                 <Button
                   variant="ghost"
